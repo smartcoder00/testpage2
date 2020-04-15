@@ -1,2 +1,3 @@
 Hello World
-{% include testfile.md %}
+{% capture my_include %}{% include testfile.md %}{% endcapture %}
+{{ my_include | markdownify }}
